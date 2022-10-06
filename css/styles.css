@@ -12,12 +12,12 @@
 */
 
 :root {
---main-bcg-color: #FFFFFF;
---footer-bcg-color: #2F303A;
---team-bcg-color: #F5F4FA;
---main-color: #212121;
---secondary-color: #757575;
---focus-color: #2196F3;
+    --main-bcg-color: #FFFFFF;
+    --footer-bcg-color: #2F303A;
+    --team-bcg-color: #F5F4FA;
+    --main-color: #212121;
+    --secondary-color: #757575;
+    --focus-color: #2196F3;
 }
 
 body {
@@ -25,9 +25,10 @@ body {
     color: var(--main-color);
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    
+
 }
-/* header styles */
+
+/* стилі header */
 .page-header {
     background-color: var(--main-bcg-color);
 }
@@ -46,14 +47,29 @@ body {
     color: var(--focus-color);
 }
 
-.nav-item {
+.nav-item .link,
+.link-contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--main-color);
+    text-decoration: none;
 }
+
+.link-contacts {
+    color: var(--secondary-color);
+}
+
 .nav-item .link:hover,
-.nav-item .link:focus {
+.nav-item .link:focus,
+.link-contacts:hover,
+.link-contacts:focus {
     color: var(--focus-color);
 }
+
+.link.link-active {
+    color: var(--focus-color);
+}
+
+/* стилі main */
