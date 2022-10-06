@@ -2,24 +2,58 @@
 фон боді #F5F5F5
 фон головної секції #FFFFFF
 фон заголовка h1 та футера #2F303A
-колір кнопки #F5F4FA
+фон команди і колір кнопки #F5F4FA
 колір фокусу і лого #2196F3
 колір лого #000000
-Колір посилання хедер #757575
+Колір посилання хедер і колір тексту #757575
 колір основного тексту #212121
 колір посилань у футері rgba(255, 255, 255, 0.6)
 колір лінії під хедером #ECECEC
-
-шрифт лого font-family: 'Raleway', sans-serif;
-
 */
 
 :root {
 --main-bcg-color: #FFFFFF;
 --footer-bcg-color: #2F303A;
+--team-bcg-color: #F5F4FA;
+--main-color: #212121;
+--secondary-color: #757575;
+--focus-color: #2196F3;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #F5F5F5;
+    color: var(--main-color);
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* header styles */
+.page-header {
+    background-color: var(--main-bcg-color);
+}
+
+.page-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.logo-style {
+    color: var(--focus-color);
+}
+
+.nav-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+}
+.nav-item .link:hover,
+.nav-item .link:focus {
+    color: var(--focus-color);
 }
