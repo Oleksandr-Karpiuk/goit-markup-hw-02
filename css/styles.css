@@ -1,4 +1,25 @@
+/* Основні кольори
+фон боді #F5F5F5
+фон головної секції #FFFFFF
+фон заголовка h1 та футера #2F303A
+колір кнопки #F5F4FA
+колір фокусу і лого #2196F3
+колір лого #000000
+Колір посилання хедер #757575
+колір основного тексту #212121
+колір посилань у футері rgba(255, 255, 255, 0.6)
+колір лінії під хедером #ECECEC
+
+
+*/
+
+:root {
+--main-bcg-color: #FFFFFF;
+--footer-bcg-color: #2F303A;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
 }
