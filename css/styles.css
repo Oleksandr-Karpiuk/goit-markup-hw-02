@@ -103,6 +103,10 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
 
 /* секція наші переваги */
 .advantage-title {
