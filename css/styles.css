@@ -12,7 +12,6 @@
 */
 
 :root {
-  --body-bcg-color: #f5f5f5;
   --main-bcg-color: #ffffff;
   --hero-footer-bcg: #2f303a;
   --team-bcg-color: #f5f4fa;
@@ -25,7 +24,7 @@
 }
 
 body {
-  background-color: var(--body-bcg-color);
+  background-color: var(--main-bcg-color);
 
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -35,10 +34,6 @@ body {
 }
 
 /* HEADER */
-.page-header {
-  background-color: var(--main-bcg-color);
-}
-
 .page-logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -81,12 +76,8 @@ body {
 
 /* MAIN */
 /* головна секція hero */
-.page-main,
-.portfolio-main {
-  background-color: var(--main-bcg-color);
-}
-
-.hero {
+.hero,
+.page-footer {
   background-color: var(--hero-footer-bcg);
 }
 
@@ -152,13 +143,8 @@ body {
 }
 
 /* FOOTER */
-.page-footer {
-  background-color: var(--hero-footer-bcg);
-}
-
 .logo-footer,
-.footer-link:hover,
-.footer-link:focus {
+.footer-link.address-link {
   color: var(--white-color);
 }
 
@@ -166,6 +152,11 @@ body {
   font-style: normal;
   text-decoration: none;
   color: var(--address-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--focus-color);
 }
 
 /* PORTFOLIO.HTML MAIN */
@@ -194,10 +185,15 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--main-color);
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-color);
+}
+
+.portfolio-link {
+  text-decoration: none;
 }
